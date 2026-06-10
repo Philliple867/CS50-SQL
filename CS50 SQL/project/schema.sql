@@ -1,5 +1,3 @@
--- In schema.sql
-
 CREATE TABLE "authors" (
     "id" INTEGER,
     "name" TEXT NOT NULL,
@@ -25,5 +23,4 @@ CREATE TABLE "status" (
     FOREIGN KEY("book_id") REFERENCES "books"("id")
 );
 
--- Thêm index để tối ưu tìm kiếm (Harvard rất thích điểm này)
 CREATE INDEX "book_title_search" ON "books" ("title");
