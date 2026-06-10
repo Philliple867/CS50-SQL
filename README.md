@@ -1,7 +1,4 @@
 # Personal Library Manager - CS50 SQL Final Project
-
-## Video URL: https://youtu.be/OwbugZau46c
-
 ## Project Description
 This project is a relational database designed to help book enthusiasts manage their personal collections. It allows users to track authors, book details (title, genre, year), and personal reading progress including completion status and star ratings.
 
