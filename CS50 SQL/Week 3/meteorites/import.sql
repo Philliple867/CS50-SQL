@@ -10,7 +10,7 @@ CREATE TABLE "temp" (
     "long" REAL
 );
 
-.import --csv --skip 1 meteorites.csv temp
+.import 
 
 UPDATE "temp" SET "mass" = NULL WHERE "mass" = '' OR "mass" = 0;
 UPDATE "temp" SET "year" = NULL WHERE "year" = '' OR "year" = 0;
