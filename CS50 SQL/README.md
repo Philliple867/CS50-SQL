@@ -1,4 +1,4 @@
--- 1. Bảng Users
+Users
 CREATE TABLE `users` (
     `id` INT AUTO_INCREMENT,
     `first_name` VARCHAR(255) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE `users` (
     PRIMARY KEY (`id`)
 );
 
--- 2. Bảng Schools
+Schools
 CREATE TABLE `schools` (
     `id` INT AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `schools` (
     PRIMARY KEY (`id`)
 );
 
--- 3. Bảng Companies
+Companies
 CREATE TABLE `companies` (
     `id` INT AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL UNIQUE,
@@ -27,7 +27,7 @@ CREATE TABLE `companies` (
     PRIMARY KEY (`id`)
 );
 
--- 4. Bảng Connections (Gộp chung theo yêu cầu README)
+Connections 
 CREATE TABLE `connections` (
     `id` INT AUTO_INCREMENT,
     `user_id` INT NOT NULL,
