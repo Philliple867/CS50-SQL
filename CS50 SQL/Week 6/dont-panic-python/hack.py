@@ -1,6 +1,6 @@
 from cs50 import SQL
 
-# Kết nối đến database theo đúng cú pháp của CS50
+# Kết nối đến database 
 db = SQL("sqlite:///dont-panic.db")
 
 # Hỏi người dùng nhập mật khẩu mới
