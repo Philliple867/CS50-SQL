@@ -1,4 +1,3 @@
--- 1. Bảng Users (Người dùng)
 CREATE TABLE `users` (
     `id` INT AUTO_INCREMENT,
     `first_name` VARCHAR(255) NOT NULL,
@@ -8,7 +7,7 @@ CREATE TABLE `users` (
     PRIMARY KEY(`id`)
 );
 
--- 2. Bảng Schools (Trường học)
+
 CREATE TABLE `schools` (
     `id` INT AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL,
@@ -18,7 +17,6 @@ CREATE TABLE `schools` (
     PRIMARY KEY(`id`)
 );
 
--- 3. Bảng Companies (Công ty)
 CREATE TABLE `companies` (
     `id` INT AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL,
@@ -35,7 +33,6 @@ CREATE TABLE `connections_people` (
     FOREIGN KEY(`user_b_id`) REFERENCES `users`(`id`)
 );
 
--- 5. Kết nối giữa Người với Trường học
 CREATE TABLE `connections_schools` (
     `user_id` INT,
     `school_id` INT,
@@ -46,7 +43,6 @@ CREATE TABLE `connections_schools` (
     FOREIGN KEY(`school_id`) REFERENCES `schools`(`id`)
 );
 
--- 6. Kết nối giữa Người với Công ty
 CREATE TABLE `connections_companies` (
     `user_id` INT,
     `company_id` INT,
